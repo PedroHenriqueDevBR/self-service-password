@@ -36,7 +36,7 @@
     {if $pwd_show_policy !== "never" and $pwd_show_policy_pos === 'above'}
         {include file="policy.tpl"}
     {/if}
-    <div class="alert alert-info">
+    <div class="">
     <form action="#" method="post" class="form-horizontal">
         <div class="form-group">
             <label for="login" class="col-sm-4 control-label">{$msg_login}</label>

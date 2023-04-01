@@ -18,8 +18,14 @@
 {if $background_image}
      <style>
        html, body {
-         background: url({$background_image}) no-repeat center fixed;
+         background: url({$background_image}) no-repeat center;
          background-size: cover;
+         height: 100vh;
+         width: 100vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding-top: 0;
        }
   </style>
 {/if}
