@@ -29,8 +29,6 @@
 #==============================================================================
 
 # Debug mode
-# true: log and display any errors or warnings (use this in configuration/testing)
-# false: log only errors and do not display them (use this in production)
 $debug = false;
 
 # LDAP
@@ -307,27 +305,27 @@ $keyphrase = "secret";
 #$reset_url = $_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_X_FORWARDED_HOST'] . $_SERVER['SCRIPT_NAME'];
 
 # Display help messages
-$show_help = true;
+$show_help = false;
 
 # Default language
-$lang = "en";
+$lang = "pt-BR";
 
 # List of authorized languages. If empty, all language are allowed.
 # If not empty and the user's browser language setting is not in that list, language from $lang will be used.
 $allowed_lang = array();
 
 # Display menu on top
-$show_menu = true;
+$show_menu = false;
 
 # Logo
-$logo = "images/ltb-logo.png";
+$logo = "images/logo-def.png";
 
 # Background image
-$background_image = "images/unsplash-space.jpeg";
+$background_image = "images/clean.jpg";
 
 # Path is relative to htdocs/html and the custom CSS file should be created in css/ directory. For example: "css/sample.css"
 $custom_css = "";
-$display_footer = true;
+$display_footer = false;
 
 # Where to log password resets - Make sure apache has write permission
 # By default, they are logged in Apache log
