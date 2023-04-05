@@ -4,7 +4,7 @@
         {if $show_menu }
             {include file="menu.tpl"}
         {else}
-        <div class="title alert alert-success text-center"><h1>{$msg_title}</h1></div>
+        <div class="text-center"><h1>{$msg_title}</h1></div>
         {/if}
         {if $logo }
         <a href="index.php">
