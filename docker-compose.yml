@@ -7,3 +7,21 @@ services:
       - 8080:80
     volumes:
       - ./ssp.conf.php:/var/www/conf/config.inc.local.php
+    networks:
+      - internal
+
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - internal
+    volumes:
+      - ./logs/nginx:/var/log/nginx/
+
+networks:
+  internal:
+    driver: bridge
